@@ -1,0 +1,116 @@
+body{
+    background-color: #1c1f26;
+}    
+div{
+    display: flex;
+}
+picture{
+    display: inline-block;
+    margin:0 auto;
+    margin-top: 100px;
+    letter-spacing: 50px;
+}
+.img{
+    border-radius: 30px;
+    box-shadow:0 0 1em #EAEEF6;
+    cursor:pointer;
+}
+#whats{
+    box-shadow: inset 6px #EAEEF6 ;
+    border-radius: 180px;
+}
+#face{
+    box-shadow: 0 0 1em #EAEEF6 ;
+    border-radius: 190px;
+}
+
+
+#whats:hover{
+   animation:whatsfloat 1s ease-in-out infinite;; 
+   transition:.2s;
+   animation-delay:.1s;
+}
+
+#insta:hover{
+    animation: instafloat 1s ease-in-out infinite;
+    transition:.2s;
+    animation-delay:.1s;
+}
+
+#face:hover{
+    animation: facefloat 1s ease-in-out infinite;
+    transition:.2s;
+    animation-delay:.1s;
+}
+
+/*animação do insta*/
+@keyframes instafloat{
+    0%{
+        box-shadow:0 0 1em #CA2B8B ;
+        transform:translateY(0);
+    }
+
+    50%{
+        box-shadow:0 0 1em #B82E9C;
+        transform:translateY(-15px);
+    }
+
+    100%{
+        box-shadow:0 0 1em #7437CA;
+        transform:translateY(0);
+    }
+
+}
+
+  /* animação do whatsapp*/
+@keyframes whatsfloat{
+    0%{
+        box-shadow:0 0 1em #0AEB2B;
+        transform:translateY(0);
+    }
+
+    50%{
+        box-shadow:0 0 1em #07B822;
+        transform:translateY(-15px);
+    }
+
+    100%{
+       
+        box-shadow:0 0 1em #046B14;
+        transform:translateY(0);
+    }
+}
+
+/*animação do facebook*/
+@keyframes facefloat{
+    0%{
+        box-shadow:0 0 1em #1A9BEB;
+        transform:translateY(0);
+    }
+
+    50%{
+        box-shadow:0 0 1em #1479B8;
+        transform:translateY(-15px);
+    }
+
+    100%{
+       
+        box-shadow:0 0 1em #0C476B;
+        transform:translateY(0);
+    }
+}
+
+
+@font-face {
+    font-family: 'myfont';
+    src: url('font/Daughter\ of\ Fortune.ttf');
+    
+}
+
+footer{
+    font-size: 19px;
+    color: #323232;
+    font-family: 'myfont';
+    display: flex;
+   margin-top: 100px;
+}
